@@ -24,4 +24,10 @@ public class ElementUtil {
     public void click(By locator) {
         waitForElementVisible(locator).click();
     }
+
+    public void type(By locator, String text){
+        WebElement element = waitForElementVisible(locator);
+        element.clear();
+        element.sendKeys(text);
+    }
 }

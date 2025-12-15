@@ -14,8 +14,21 @@ public class EcommercePages {
     }
 
     private By loginLink = By.xpath("//a[text()=' Signup / Login']");
+    private By emailTextBox = By.xpath("(//input[@name='email'])[1]");
+    private By passwordTextBox = By.xpath("(//input[@name='password'])[1]");
+    private By loginButtonInLoginPage = By.xpath("//button[@data-qa='login-button']");
     public void clickLoginButton() {
-        System.out.println("Clicking on login button");
         elementUtil.click(loginLink);
+    }
+
+    public void enterEmail(String email) {
+        elementUtil.type(emailTextBox, email);
+    }
+
+    public void enterPassword(String password) {
+        elementUtil.type(passwordTextBox, password);
+    }
+    public void clickLoginInLoginPage() {
+        elementUtil.click(loginButtonInLoginPage);
     }
 }

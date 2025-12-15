@@ -27,11 +27,12 @@ public class Ecommerce {
     }
     @Then("User enters email and password")
     public void user_enters_email_and_password() {
-
+        ecommercePages.enterEmail("nuwanihansi92@gmail.com");
+        ecommercePages.enterPassword("nuwa@12345");
     }
     @Then("User clicks on login")
     public void user_clicks_on_login() {
-
+        ecommercePages.clickLoginInLoginPage();
     }
     @Then("User validates if login is success")
     public void user_validates_if_login_is_success() {
