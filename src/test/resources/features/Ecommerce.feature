@@ -1,4 +1,5 @@
 Feature: Landing Page
+
     Scenario: Open landing page
         Given I am on the landing page
         Then User clicks on login button
