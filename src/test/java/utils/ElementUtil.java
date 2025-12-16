@@ -14,7 +14,7 @@ public class ElementUtil {
 
     public ElementUtil(WebDriver driver) {
         this.driver = driver;
-        this.webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     public WebElement waitForElementVisible(By locator) {
@@ -29,5 +29,9 @@ public class ElementUtil {
         WebElement element = waitForElementVisible(locator);
         element.clear();
         element.sendKeys(text);
+    }
+
+    public boolean isDisplayed(By locator){
+        return waitForElementVisible(locator).isDisplayed();
     }
 }
