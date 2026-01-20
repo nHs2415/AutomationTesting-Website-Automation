@@ -1,99 +1,115 @@
-# QA Automation Project - E-commerce Website
+# 🧪 QA Automation Project – AutomationExercise
 
-## Overview
-This project automates end-to-end testing for an e-commerce website using **Java**, **Selenium WebDriver**, and **Cucumber** (BDD).  
-It covers user activities from landing page, login, product browsing, cart management, checkout, to payment confirmation.
+## 📌 Project Overview
+This project is a **QA Automation Testing framework** developed to automate end-to-end test scenarios for the website:
 
-The main feature tested is described in the `Ecommerce.feature` file.
+🔗 https://automationexercise.com/
 
----
-
-## Project Structure
-
-
----
-
-## Prerequisites
-
-- **Java JDK 20** or higher installed
-- **Maven** installed
-- **Chrome Browser** installed
-- IDE: IntelliJ IDEA or Eclipse
-- Internet connection (for WebDriverManager to download drivers)
+The main goal of this project is to:
+- Automate critical user workflows
+- Reduce manual testing effort
+- Improve test accuracy and reliability
+- Ensure application stability after changes
+- Demonstrate real-world automation testing skills
 
 ---
 
-## Installation
+## 🛠️ Tech Stack Used
+- **Language:** Java  
+- **Automation Tool:** Selenium WebDriver  
+- **BDD Framework:** Cucumber  
+- **Test Runner:** TestNG  
+- **Build Tool:** Maven  
+- **Design Pattern:** Page Object Model (POM)  
+- **Browser:** Google Chrome  
 
-1. Clone the repository:
+---
 
+## 📂 Project Structure
+src
+└── test
+
+├── java
+
+│ ├── pages → Page Object classes
+
+│ ├── stepDefinitions → Cucumber step definitions
+
+│ ├── hooks → Setup & teardown (Before/After)
+
+│ ├── utils → Utility classes (ElementUtil, Constants)
+
+│ └── config → WebDriver Factory
+
+│
+└── resources
+
+└── features → Cucumber feature files
+
+
+---
+
+## 🚀 Automated Test Scenarios
+- Launch application
+- User login validation
+- Home page validation
+- Product search and listing validation
+- View product details
+- Add product to cart
+- View cart
+- Checkout process
+- Enter payment details
+- Place order
+- Order confirmation validation
+
+---
+
+## 🧩 Framework Design
+
+### 🔹 Page Object Model (POM)
+- Each page has a separate class
+- Improves maintainability and readability
+- Reusable locators and methods
+
+### 🔹 Cucumber BDD
+- Feature files written in Gherkin syntax
+- Easy to understand for both technical and non-technical users
+
+### 🔹 Hooks
+- `@Before` → Launch browser and open application
+- `@After` → Close browser after execution
+
+---
+
+## ⚙️ How to Run the Project
+
+### ✅ Prerequisites
+- Java JDK
+- Maven
+- Chrome Browser
+- IDE (IntelliJ / Eclipse)
+
+### ▶️ Run Tests
+Using IDE:
+- Run `Runner.java`
+
+Using Maven:
 ```bash
-git clone <repository-url>
-cd <project-folder>
-```
-2. Install dependencies via Maven:
-
-```
-mvn clean install
-```
-
-How to Run Tests
-1. Using Cucumber Runner
-
-Locate the runner class in test/java/runner/ (e.g., TestRunner.java) and run it from your IDE.
-
-2. Using Maven Command
-
-Run all tests via terminal:
-```
 mvn test
 ```
+🎯 Benefits of This Automation Project
 
-Test Scenario (Ecommerce.feature)
+Saves manual testing time
 
-Feature: Landing Page
+Reduces human errors
 
-Scenario: Open landing page and complete purchase
+Ensures quick regression testing
 
-Steps automated:
+Easy to extend for new test cases
 
-Navigate to landing page
+Supports faster release cycles
 
-Click login button
+👩‍💻 Author
 
-Enter email and password
-
-Click login
-
-Validate login success
-
-Perform home page validation
-
-Click products
-
-Validate product listing page
-
-Click on view product
-
-Validate product description page
-
-Add product to cart
-
-Validate popup
-
-View cart
-
-Validate cart page
-
-Proceed to checkout
-
-Validate checkout page
-
-Place order
-
-Enter payment details
-
-Pay and confirm
-
-Validate order confirmation message
-
+Nuwani Hansika
+QA Automation Intern | Software Quality Assurance Enthusiast
